@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- font google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,400&family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <title>Youtube Api</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img class="img-fluid logo-tube" src="images/youtubelogoo.png" alt="" />
+        <span id="title-name"> Soul Tube</span>
+        <button
+          type="button"
+          class="btn btn-danger"
+          id="sign-in"
+          onclick="authenticate().then(loadClient)"
+        >
+          Sign-in
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          style="display: none;"
+          id="sign-out"
+        >
+          Sign-out
+        </button>
+      </div>
+      <div class="search">
+        <input
+          class="form-control"
+          id="channel_name"
+          type="text"
+          name=""
+          placeholder="Enter Channel Id"
+        />
+        <button type="button" class="btn btn-warning" onclick="execute()">
+          Execute
+        </button>
+      </div>
+      <button class="btn btn-info" id="btn-back">
+        Back
+      </button>
+      <div class="row">
+        <div class="col-md-9 col-sm-4">
+          <div class="playlists"></div>
+          <div class="videos"></div>
+        </div>
+        <div class="col-md-2 col-sm-6 offset-1 w-80">
+          <div class="card-div data-channel"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="index.js"></script>
+</html>

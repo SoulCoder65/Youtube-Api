@@ -1,0 +1,161 @@
+* {
+}
+/* Background */
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #1a1c20;
+}
+/* Header */
+.header {
+  width: 100%;
+  height: 7%;
+  background-color: red;
+  text-align: right;
+}
+.header button {
+  margin-top: 0.3%;
+  margin-right: 2%;
+  color: black;
+  font-weight: bold;
+}
+.logo-tube {
+  width: 4%;
+}
+
+#title-name {
+  font-size: 160%;
+  color: white;
+  margin-right: 37%;
+  font-weight: bold;
+  font-family: "Courier Prime", monospace;
+}
+/* HEader End */
+.search {
+  width: 70%;
+  margin-left: 35%;
+  margin-top: 2%;
+}
+#channel_name {
+  width: 30%;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid orange;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+#channel_name:hover,
+#channel_name:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orange;
+  margin-right: 1%;
+  box-shadow: none;
+}
+.card-div {
+  position: fixed;
+  width: 30%;
+  margin-left: -7%;
+  margin-top: -7%;
+  height: 84vh;
+}
+.channel-info {
+  width: 100%;
+}
+.card {
+  max-height: 100vh;
+  overflow: auto;
+  width: 20vw;
+  font-size: 70%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 5px black;
+  z-index: 1;
+}
+.playlists,
+.videos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4%;
+}
+.videos {
+  overflow: auto;
+}
+.videos .card {
+  max-height: 70vh;
+  margin-top: 5%;
+}
+.videos .card-img-top:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.videos .card-body {
+  background-color: #132743;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-weight: bold;
+}
+.playlists .card {
+  margin-top: 2%;
+  max-width: 80vw;
+  max-height: 80vh;
+  overflow: auto;
+}
+.playlists .card-body {
+  background-color: #132743;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-weight: bold;
+}
+.playlists .card-img-top:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Scroll Bar End */
+
+/*  Media queries*/
+
+@media screen and (max-width: 800px) {
+  .card-div {
+    position: absolute;
+
+    width: 80%;
+  }
+  .data-channel {
+    width: 90vw;
+    margin-right: 90vw;
+  }
+  .offset-1 {
+    width: 50vw;
+  }
+  .data-channel .card {
+    width: 40%;
+    margin-right: 70%;
+  }
+}
