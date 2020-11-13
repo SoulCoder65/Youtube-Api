@@ -3,9 +3,9 @@ I have created a web application using youtube/google api. We can fetch data of 
 
 # Snap Shots of Project
 
-![](Screenshot%20from%202020-09-22%2021-17-04.png)
+![](images/Screenshot%20from%202020-09-22%2021-17-04.png)
 
-![](Screenshot%20from%202020-09-22%2021-17-12.png)
+![](images/Screenshot%20from%202020-09-22%2021-17-12.png)
 
 # Note-
 This Api fetch youtube data of any channel using its id, the channel show in images Belongs to Code With Harry. One of My Favourite youtuber.
